@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h2 {
+        @apply text-xl font-semibold;
+    }
+
+    h4 {
+        @apply font-semibold;
+    }
+}
+
+@layer utilities {
+    .button-yellow {
+        @apply p-2 rounded-xl bg-yellow disabled:opacity-50 transition-colors hover:bg-dark-yellow;
+    }
+}
